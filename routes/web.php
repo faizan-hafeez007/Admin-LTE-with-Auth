@@ -23,5 +23,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//ADMIN lTE Routes
 Route::get('dashboard', [UserController::class, 'dashboard']);
 Route::get('users', [UserController::class, 'users']);
